@@ -133,6 +133,12 @@ class ExpoUIModule : Module() {
       AsyncFunction("hide") Coroutine { view: ModalBottomSheetView ->
         view.hide()
       }
+      AsyncFunction("expand") Coroutine { view: ModalBottomSheetView ->
+        view.expand()
+      }
+      AsyncFunction("partialExpand") Coroutine { view: ModalBottomSheetView ->
+        view.partialExpand()
+      }
     }
 
     ExpoUIView("SingleChoiceSegmentedButtonRowView") { props: SingleChoiceSegmentedButtonRowProps ->
